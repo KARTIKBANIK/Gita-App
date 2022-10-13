@@ -25,3 +25,13 @@ class Details3 {
     required this.nameDetails,
   });
 }
+
+//kormosotok view
+class Details4 {
+  String oddhay, nameOfchepter, totalItems;
+  Details4({
+    required this.oddhay,
+    required this.nameOfchepter,
+    required this.totalItems,
+  });
+}

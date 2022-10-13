@@ -33,7 +33,7 @@ class _Gita_18_NamState extends State<Gita_18_Nam> {
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff7c94b6),
+          color: Color.fromARGB(255, 235, 241, 147),
           image: DecorationImage(
             colorFilter: ColorFilter.mode(
                 Colors.black.withOpacity(0.2), BlendMode.dstATop),
@@ -55,8 +55,7 @@ class _Gita_18_NamState extends State<Gita_18_Nam> {
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
-                          color: Colors.grey,
-                          fontStyle: FontStyle.italic,
+                          color: Color.fromARGB(255, 219, 218, 218),
                         ),
                       ),
                       SizedBox(
@@ -66,15 +65,13 @@ class _Gita_18_NamState extends State<Gita_18_Nam> {
                         details3[index].nameDetails,
                         style: TextStyle(
                           fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 206, 178, 143),
+                          letterSpacing: 1,
+                          // fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
                   ),
-                )
-                //Text(details3[index].name),
-                );
+                ));
           },
         ),
       ),

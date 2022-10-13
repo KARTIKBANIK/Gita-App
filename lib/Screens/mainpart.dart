@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gita_apps/Screens/MainContainer_Data/gita.dart';
 
 class MainPartContainer extends StatefulWidget {
   const MainPartContainer({super.key});
@@ -116,7 +117,11 @@ class _MainPartContainerState extends State<MainPartContainer> {
             height: 10,
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => GitaPart(),
+              ));
+            },
             child: Container(
               height: 100,
               width: MediaQuery.of(context).size.width,

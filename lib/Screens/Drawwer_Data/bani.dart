@@ -31,7 +31,8 @@ class _BaniPageState extends State<BaniPage> {
         ),
         body: Container(
           decoration: BoxDecoration(
-            color: const Color(0xff7c94b6),
+            color: Color.fromARGB(255, 235, 241, 147),
+            // color: const Color(0xff7c94b6),
             image: DecorationImage(
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.dstATop),
@@ -52,8 +53,9 @@ class _BaniPageState extends State<BaniPage> {
                         child: Text(
                           details2[index].detailss,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey,
+                            letterSpacing: 1,
+                            // fontWeight: FontWeight.bold,
+                            // color: Colors.grey,
                           ),
                         ),
                       ),

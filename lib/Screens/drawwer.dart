@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:gita_apps/Model/details.dart';
-import 'package:gita_apps/Model/utils.dart';
 import 'package:gita_apps/Screens/Drawwer_Data/bani.dart';
 import 'package:gita_apps/Screens/Drawwer_Data/gita_18nam.dart';
 import 'package:gita_apps/Screens/Drawwer_Data/gita_kotha.dart';
-import 'package:gita_apps/Screens/home_page.dart';
+import 'package:gita_apps/Screens/Drawwer_Data/gita_pather_fol.dart';
+import 'package:gita_apps/Screens/Drawwer_Data/kolijug_bani.dart';
 
 class Drrawer extends StatefulWidget {
   const Drrawer({super.key});
@@ -18,13 +16,6 @@ class _DrrawerState extends State<Drrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      //   menuScreen: DrawerScreen(),
-      //   mainScreen: HomePage(),
-      //   borderRadius: 30,
-      //   showShadow: true,
-      //   angle: -2.0,
-      // );
-
       backgroundColor: Colors.white,
       child: ListView(
         children: <Widget>[
@@ -70,31 +61,12 @@ class _DrrawerState extends State<Drrawer> {
           ),
           Padding(
             padding: const EdgeInsets.only(
-              top: 25,
+              top: 60,
               left: 5,
             ),
             child: Container(
               child: Column(
                 children: [
-                  ListTile(
-                    leading: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset("images/om.png"),
-                    ),
-                    title: Text(
-                      "গীতা কথা",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => GitaKotha(),
-                        ),
-                      );
-                    },
-                  ),
                   ListTile(
                     leading: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -143,10 +115,14 @@ class _DrrawerState extends State<Drrawer> {
                       ),
                     ),
                     onTap: () {
-                      Navigator.pop(context);
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => KoliBani(),
+                        ),
+                      );
                     },
                   ),
-                  ListTile(
+                  /* ListTile(
                     leading: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Image.asset("images/om.png"),
@@ -160,7 +136,7 @@ class _DrrawerState extends State<Drrawer> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                  ),
+                  ),*/
                   ListTile(
                     leading: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -173,7 +149,30 @@ class _DrrawerState extends State<Drrawer> {
                       ),
                     ),
                     onTap: () {
-                      Navigator.pop(context);
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => GitaFol(),
+                        ),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    leading: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset("images/om.png"),
+                    ),
+                    title: Text(
+                      "গীতা কথা",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => GitaKotha(),
+                        ),
+                      );
                     },
                   ),
                 ],
@@ -183,19 +182,5 @@ class _DrrawerState extends State<Drrawer> {
         ],
       ),
     );
-  }
-}
-
-class DrawerScreen extends StatefulWidget {
-  const DrawerScreen({super.key});
-
-  @override
-  State<DrawerScreen> createState() => _DrawerScreenState();
-}
-
-class _DrawerScreenState extends State<DrawerScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

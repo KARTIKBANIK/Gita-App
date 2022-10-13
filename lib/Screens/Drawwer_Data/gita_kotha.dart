@@ -29,7 +29,7 @@ class _GitaKothaState extends State<GitaKotha> {
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff7c94b6),
+          color: Color.fromARGB(255, 235, 241, 147),
           image: DecorationImage(
             colorFilter: ColorFilter.mode(
               Colors.black12,
@@ -48,9 +48,9 @@ class _GitaKothaState extends State<GitaKotha> {
               child: Text(
                 "গীতা পড় হিন্দু ভাই, \nগীতা ছাড়া শান্তি নাই \nগীতার কথা রাখো স্মরণ, \nগীতা দিয়ে সাজাও জীবন। \nগীতা ছেড়ে করোনা ভুল, \nগীতা হলো ধর্মের মূল। \nযত পড়বে গীতার উক্তি, \nততো হবে পাপ মুক্তি। \nগীতা দিয়ে শান্তি, \nগীতা দিয়ে মুক্তি। \nগীতা পড়লে দূর হয় জীবনের সবক্লান্তি। \nসদা ধর্মের পথে চলো, \nধর্মের কথা বলো। \nলোকে বলবে ভালো, \nতোমার মতো মানুষ হবে, \nহিন্দু ধর্মের আলো। ",
                 style: TextStyle(
-                    fontStyle: FontStyle.italic,
                     fontSize: 22,
-                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1,
+                    //fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
             ),
@@ -62,6 +62,7 @@ class _GitaKothaState extends State<GitaKotha> {
                 " ॐ জয় গীতা ॐ ",
                 style: TextStyle(
                   fontSize: 30,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
