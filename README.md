@@ -1,7 +1,5 @@
+#OUTPUT
 
-![I am GitHub Readme Generator's creator](https://media-exp1.licdn.com/dms/image/C4E22AQFK07Az9vwTUA/feedshare-shrink_800/0/1668613250611?e=1671667200&v=beta&t=4KwQlIIN67VkXUvChxk54-QBHafZuZNZpLFwIEwDA2Y)
-
-
-
-
-
+![3](https://github.com/KARTIKBANIK/Gita-App/assets/69008307/3cb76862-2f72-44a0-a599-c1ed9811fa9b)
+![1](https://github.com/KARTIKBANIK/Gita-App/assets/69008307/d88eb7dc-706a-45e2-8bd1-a9c1290eec0c)
+![2](https://github.com/KARTIKBANIK/Gita-App/assets/69008307/5dba839d-bfb1-4e46-ab8b-e56bfe055f8c)
